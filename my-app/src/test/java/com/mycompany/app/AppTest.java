@@ -29,6 +29,10 @@ public class AppTest
      * Rigourous Test :-)
      */
     public void testApp() {
+        int arr[] = { 1, 2, 3, 4, 5 };
+        int n = arr.length;
+        int x = 2;
         assertEquals("Hello World!", App.hello());
+        assertEquals(1, App.binarySearch(arr, 0, n - 1, x));
     }
 }
